@@ -6,33 +6,15 @@ The bar to beat is the **persistence baseline** ("tomorrow = today"), which is s
 
 ## Results
 
-Evaluated with 5-fold expanding-window walk-forward validation (each fold trains on the past and tests on the following ~year).
-
-| Method | Mean MAE (°C) | Std across folds | Improvement vs. baseline | Folds beating baseline |
-|---|---|---|---|---|
-| Persistence baseline | XX.XX | X.XX | n/a | n/a |
-| Linear Regression | XX.XX | X.XX | XX.X% | X / 5 |
-| Random Forest | XX.XX | X.XX | XX.X% | X / 5 |
-| Gradient Boosting | XX.XX | X.XX | XX.X% | X / 5 |
-
 ![MAE comparison](mae_comparison.png)
-
-**Takeaway:** *(one or two sentences on which model won, by how much, and whether the gaps between models are larger than the fold-to-fold spread.)*
 
 ### Feature importance
 
 ![Feature importance](feature_importance.png)
 
-*(One or two sentences describing what the chart shows, e.g. which features dominate. Note that the lag and rolling features are correlated, so importance is shared between them and should be read as a group.)*
-
 ### Prediction intervals
 
 An 80% interval from quantile gradient boosting (10th and 90th percentiles):
-
-| Method | Coverage (target: 80%) | Mean width (°C) |
-|---|---|---|
-| Quantile regression | XX.X% | X.XX |
-| Residual-based | XX.X% | X.XX |
 
 ![Prediction interval](prediction_interval.png)
 
